@@ -10,8 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
     sensor_msgs
     std_msgs
     message_generation
-	genmsg
-	tracking_tester
+    genmsg
+    tracking_tester
 )
 
 execute_process(
@@ -36,7 +36,7 @@ include_directories(
 )
 
 add_executable(example_tracker
-    src/main.cpp
+    src/example_tracker/main.cpp
 )
 
 add_dependencies(example_tracker ${catkin_EXPORTED_TARGETS})

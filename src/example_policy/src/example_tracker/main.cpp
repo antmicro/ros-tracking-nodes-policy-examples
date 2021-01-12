@@ -12,7 +12,6 @@ void updateTester(const tracking_tester::frame_msg& frame)
 {
     // uncomment to simulate a slow algorithm
     // usleep(3e5);
-    unsigned num = frame.number;
     tracking_tester::optional_bbox_msg message;
     static unsigned calls{};
     message.bbox.width = 70;
@@ -21,7 +20,6 @@ void updateTester(const tracking_tester::frame_msg& frame)
     message.bbox.y = frame.image.height / 2 - message.bbox.height / 2 + 25 * std::cos(calls / 30.0);
     message.timestamp = ros::Time::now();
     message.valid = true;
-    message.number = num;
 
     bbox_pub.publish(message);
     calls++;

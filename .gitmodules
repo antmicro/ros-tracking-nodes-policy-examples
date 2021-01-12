@@ -1,0 +1,9 @@
+[submodule "src/stopwatch"]
+	path = src/stopwatch
+	url = ../ros-tracking-nodes-stopwatch.git
+[submodule "src/tracking_tester"]
+	path = src/tracking_tester
+	url = ../ros-tracking-nodes-tester-node.git
+[submodule "src/vot-report-generator"]
+	path = src/vot-report-generator
+	url = ../ros-tracking-nodes-vot-report-generator.git
