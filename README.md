@@ -2,7 +2,7 @@
 
 Copyright (c) 2020-2021 [Antmicro](https://www.antmicro.com)
 
-This repository shows how to use the [ros-tracking-nodes-teste-node project](https://github.com/antmicro/ros-tracking-nodes-tester-node).
+This repository shows how to use the [ros-tracking-nodes-tester-node project](https://github.com/antmicro/ros-tracking-nodes-tester-node).
 
 Currently, it only contains a "random" policy that returns random bounding boxes.
 
@@ -15,7 +15,7 @@ The aggregation of predictions from those diverse algorithms can form a detectio
 
 Such complex systems require Continuous Integration-driven testing to ensure that the quality of predictions improves over time and any issues with the predictions are detected as soon as possible.
 
-This repository demonstrates how such detection and tracking systems implemented using [Robotic Operating System ROS](https://www.ros.org) can be tested with the [ros-tracking-nodes-teste-node project](https://github.com/antmicro/ros-tracking-nodes-tester-node).
+This repository demonstrates how such detection and tracking systems implemented with [Robotic Operating System ROS](https://www.ros.org) can be tested using the [ros-tracking-nodes-teste-node project](https://github.com/antmicro/ros-tracking-nodes-tester-node).
 
 ## System requirements
 
@@ -39,9 +39,9 @@ cd policy-examples/
 
 The submodules for the project are:
 
-* [ROS stopwatch node](https://github.com/antmicro/ros-tracking-nodes-stopwatch) - this is a ROS utility for measuring time between publishes between two topics (either already existing topics, or created using Tic Toc API),
+* [ROS stopwatch node](https://github.com/antmicro/ros-tracking-nodes-stopwatch) - this is a ROS utility for measuring the time between publishes between two topics (either already existing topics, or created using Tic Toc API),
 * [ROS tracking nodes tester node](https://github.com/antmicro/ros-tracking-nodes-tester-node) - this is a ROS package for testing object detection and tracking policies on video sequences,
-* [VOT report generator](https://github.com/antmicro/ros-tracking-nodes-vot-report-generator) - this is a Python tool that collects the data from the work of the above nodes and produces the quality tests report.
+* [VOT report generator](https://github.com/antmicro/ros-tracking-nodes-vot-report-generator) - this is a Python tool that collects the data from the work of the above nodes and produces a quality tests report.
 
 Secondly, build the project:
 
@@ -65,7 +65,7 @@ The sequences for this tester can be created using [video2dataset tool](https://
 
 The sample sequence is shown in the `sample-dataset` directory.
 
-Firstly, run roscore in a separate shell:
+To begin, run roscore in a separate shell:
 ```
 source devel/setup.bash
 roscore
@@ -103,7 +103,7 @@ export PYTHONPATH=./src/vot-report-generator/:$PYTHONPATH
 python3 -m vot_report_generator.main ./outdir/ ./sample-dataset/ --output report
 ```
 
-After this, the report should be generated in the `report` directory.
+The report should be generated in the `report` directory.
 
 ### Report structure
 
