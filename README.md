@@ -8,7 +8,7 @@ Currently, it only contains a "random" policy that returns random bounding boxes
 
 ## Testing the tracking and detection algorithms
 
-The aim of the [ros-tracking-nodes-teste-node](https://github.com/antmicro/ros-tracking-nodes-tester-node) and [vot-report-generator](https://github.com/antmicro/ros-tracking-nodes-vot-report-generator) projects is to measure the quality of detection and tracking policies on video sequences.
+The aim of the [ros-tracking-nodes-tester-node](https://github.com/antmicro/ros-tracking-nodes-tester-node) and [vot-report-generator](https://github.com/antmicro/ros-tracking-nodes-vot-report-generator) projects is to measure the quality of detection and tracking policies on video sequences.
 The detection and tracking of objects in a video feed is an interesting use case that can involve various computer vision algorithms - detectors, trackers, object descriptors, classifiers and other algorithms.
 There are also deep learning algorithms that perform both detection and tracking of objects.
 The aggregation of predictions from those diverse algorithms can form a detection and tracking policy.
