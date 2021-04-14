@@ -3,7 +3,6 @@
 Copyright (c) 2020-2021 [Antmicro](https://www.antmicro.com)
 
 This repository shows how to use the [ros-tracking-nodes-tester-node project](https://github.com/antmicro/ros-tracking-nodes-tester-node).
-
 Currently, it only contains a "random" policy that returns random bounding boxes.
 
 ## Testing the tracking and detection algorithms
